@@ -4,10 +4,13 @@ Cover a rectangular domain with periodic Voronoi cells
 
 ## Requirements
 
-- PolygonClip
+- [GPC](http://www.cs.man.ac.uk/~toby/gpc/) library
+
+  Use this [MATLAB wrapper](https://fr.mathworks.com/matlabcentral/fileexchange/8818-polygon-clipper). It is assumed that the compiled mex file is called *PolygonClip*.
+
 - at least MATLAB R2007a (because of input validation; the main routine uses `voronoin` introduced before R2006a)
 
-The code would probably work in Octave as well, if one manages to compile PolygonClip as an .oct file.
+The code would probably work in Octave as well, if one manages to compile GPC as an .oct file.
 
 ## Usage
 
@@ -73,7 +76,7 @@ By changing the lines
 voronoin(x)
 ```
 
-to another kind of tessellator, other tessellations can be created. Also, one can use other methods for cutting the Voronoi cells with the original domain if *PolygonClipper* is not suitable (cannot compile it or its licensing is not appropriate).
+to another kind of tessellator, other tessellations can be created. Also, one can use other methods for cutting the Voronoi cells with the original domain if GPC is not suitable (cannot compile it or its licensing is not appropriate).
 
 ---
 
