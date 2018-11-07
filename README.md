@@ -59,7 +59,7 @@ and the outputs are
 2. Show the seeds of the Voronoi diagram
 
    ``` matlab
-   cells = periodicVoronoi([-1 4 5 3.5], 'nSeed',50);
+   [cells, seeds] = periodicVoronoi([-1 4 5 3.5], 'nSeed',50);
    for iCell = cells
        patch(iCell{:}(:,1), iCell{1}(:,2), rand(1,3));
    end
